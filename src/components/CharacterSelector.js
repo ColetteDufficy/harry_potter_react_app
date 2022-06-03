@@ -1,8 +1,25 @@
 import React from 'react';
 
-const CharacterSelector = () => {
+const CharacterSelector = ({characters, handleCharacterChange}) => {
+
+    const handleChange = (event) => {
+        handleCharacterChange(event.target.value)
+    }
+
+    const characterOptions = characters.map ((character) => {
+            return (
+            <option key={character.name} value={character.name} >
+                {character.name}
+            </option>
+            )
+        })
+    
+
+
     return (
-        <p>Character selector goes here</p>
+        <select onChange={handleChange}>
+            {characterOptions}
+        </select>
     )
 }
 

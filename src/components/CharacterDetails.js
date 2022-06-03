@@ -1,8 +1,14 @@
 import React from 'react';
 
-const CharacterDetails = () => {
+const CharacterDetails = ({selectedCharacter}) => {
     return (
-        <p>deets go here</p>
+        <>
+        <p>Character name: {selectedCharacter.name}</p>
+        <p>House: {selectedCharacter.house}</p>
+        <p>Species: {selectedCharacter.species}</p>
+        <p>Ancestry: {selectedCharacter.ancestry}</p>
+        </>
+        
     )
 }
 

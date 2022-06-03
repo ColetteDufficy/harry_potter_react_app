@@ -35,7 +35,8 @@ const CharacterContainer = () => {
 
     return (
         <>
-            <h1>i am the Character container</h1>
+            <h1>Welcome to the world of Harry Potter</h1>
+            <h3>Choose a character from the drop down menu, to see more details!</h3>
             <CharacterSelector 
             characters={characters}
             handleCharacterChange={handleCharacterChange}

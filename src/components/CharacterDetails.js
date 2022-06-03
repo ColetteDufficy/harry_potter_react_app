@@ -7,6 +7,7 @@ const CharacterDetails = ({selectedCharacter}) => {
         <p>House: {selectedCharacter.house}</p>
         <p>Species: {selectedCharacter.species}</p>
         <p>Ancestry: {selectedCharacter.ancestry}</p>
+        {/* <p>Wand type: {selectedCharacter.wand}</p> */}
         </>
         
     )
